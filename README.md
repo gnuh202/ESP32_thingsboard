@@ -3,7 +3,7 @@
 
 # Send Client-side Attributes - ThingsBoard MQTT Client Example
 
-* [中文版](./README_CN.md)
+* (./README_CN.md)
 
 This example implements client-side attributes related functions:
 
@@ -180,6 +180,3 @@ I (27978) tb_mqtt_client_helper: It already disconnected from thingsboard MQTT s
 
    * `Login in ThingsBoard CE/PE as tenant` --> `Devices` --> Click on *my device* --> `Attributes`  --> `Client Attributes` --> Check out the latest client attributes. Your can find `humidity` and `temprature`. Their values change over time.
 
-## Troubleshooting
-
-For any technical queries, please open an [issue](https://github.com/liang-zhu-zi/esp32-thingsboard-mqtt-client/issues) on GitHub. We will get back to you soon.
