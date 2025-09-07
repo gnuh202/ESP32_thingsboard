@@ -1,0 +1,45 @@
+menu "BTL LTN CONFIG"
+
+    config EXAMPLE_UART_PORT_NUM
+        int "UART port number"
+        range 0 2 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S3
+        default 2 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S3
+        range 0 1 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32C3
+        default 1 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32C3
+
+    config EXAMPLE_UART_BAUD_RATE
+        int "UART baudrate"
+        range 1200 115200
+        default 9600
+
+    config EXAMPLE_UART_RXD
+        int "UART RXD pin"
+        range 0 34 if IDF_TARGET_ESP32
+        range 0 46 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        range 0 19 if IDF_TARGET_ESP32C3
+        range 0 47 if IDF_TARGET_ESP32S3
+        default 18
+
+    config EXAMPLE_UART_TXD
+        int "UART TXD pin"
+        range 0 34 if IDF_TARGET_ESP32
+        range 0 46 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        range 0 19 if IDF_TARGET_ESP32C3
+        range 0 47 if IDF_TARGET_ESP32S3
+        default 19
+
+    config EXAMPLE_TASK_STACK_SIZE
+        int "UART echo example task stack size"
+        range 1024 16384
+        default 2048
+
+
+    config BROKER_URL
+        string "Broker URL"
+        default "mqtt://demo.thingsboard.io"
+
+    config ACCESS_TOKEN
+        string "Access Token"
+        default "g05qs9ji2hej8s8mm6l0"
+
+endmenu
