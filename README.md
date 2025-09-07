@@ -3,12 +3,6 @@
 
 # Send Client-side Attributes - ThingsBoard MQTT Client Example
 
-* (./README_CN.md)
-
-This example implements client-side attributes related functions:
-
-* Publish client-side attributes: model, setpoint
-
 ## Hardware Required
 
 * A development board with ESP32/ESP32-C3/ESP32-H2/ESP32-C2/ESP32-S3 SoC (e.g., ESP32-DevKitC, ESP-WROVER-KIT, etc.)
